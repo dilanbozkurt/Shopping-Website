@@ -1,0 +1,250 @@
+body{
+  background-image: url("images/neutral.jpg");
+}
+
+#site-name{
+  margin-left: 20px;
+  color: #66400fd7;
+  font-family: 'Goudy Old Style';
+}
+
+#small-talk{
+  margin-left: 30px;
+  color: #66400fd7;
+}
+
+.button{
+  position: relative;
+  left: 1350px;
+  bottom: 60px;
+  padding-top: 5px;
+}
+
+#cartButton{
+  color: #804900;
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 2px;
+  border: solid rgb(226, 212, 194);
+}
+header{
+  height: 100px;
+  border: solid #804900;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+
+/*--------------------------------------------*/
+
+.container{
+  border: 4px solid rgb(241, 229, 211);
+  border-bottom: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 15px;
+}
+
+.albumProduct{
+  width: 250px;
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image{
+  margin-left: 45px;
+}
+
+.add-cart{
+  position: absolute;
+  width: 250px;
+  background-color: lightgoldenrodyellow ;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;  
+}
+
+.albumProduct:hover .cartNew,
+.albumProduct:hover .cart6,
+.albumProduct:hover .cart5,
+.albumProduct:hover .cart4,
+.albumProduct:hover .cart1,
+.albumProduct:hover .cart2,
+.albumProduct:hover .cart3{
+  bottom: 15px;
+  width: 175px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/*---------------------------------------------------------- */
+#cartPage{
+  display: block; 
+}
+
+.product-container{
+  max-width: 850px;
+  justify-content: space-around;
+  margin:0 auto;
+  margin-top: 60px;
+  border: solid rgb(218, 191, 119);
+}
+
+.product-header{
+  width: 100%;
+  max-width: 850px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid rgb(177, 153, 89);
+  margin: 0 auto;
+}
+
+.product{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid rgb(238, 220, 163);
+}
+
+
+.cartTitle{
+  color: #816f07;
+  font-size: 15px;
+}
+
+.product-title{
+  width: 32%;
+  display: relative;
+  right: 85px;
+  margin-left: 40px; 
+}
+
+.price{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.quantity{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.total{
+  width: 20%;
+  display: relative;
+  left: 280px;
+}
+
+
+/*----------------BASKET TOTAL--------------------------*/
+
+.basketTotalContainer{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 0;
+  border: solid 1px rgb(177, 153, 89);
+}
+
+.basketTotalTitle{
+  width: 27%;
+  margin-left: 40px;
+  color: #804900;
+}
+
+.basketTotal{
+  width: 10%;
+  color: #804900;
+}
+
+/*---------------BUYING PAGE---------------------------*/
+#buyingPage{
+  border: solid 2px rgb(218, 191, 119);
+  display: none;
+}
+
+.buyingInfo{
+  display: flex;
+  justify-content: center;
+}
+
+.buyinButtons{
+  color: #804900;
+  background-color: antiquewhite;
+  border: none;
+  padding: 10px;
+  margin: 2px;
+}
+
+.buyinButtonsDiv{
+  display: flex;
+  justify-content: center;
+}
+
+#TransactionButton{
+  margin-left: 100px;
+}
+
+/*------------------------------------------*/
+.newItem{
+  border: 1px orangered ;
+}
+
+/*------------------------------------------*/
+.newAlbums{
+  border: 4px solid rgb(241, 229, 211);
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.new{
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.newimage{
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+/*------------ADD NEW ALBUM------------------------------*/
+#newItemHeader{
+  margin-left: 50px;
+  border: 1px solid #66400fd7;
+  width: fit-content;
+}
+
+#myForm{
+  margin-left: 50px;
+}
+
+.input{
+  margin-top: 5px;
+}
+
+#addbtn{
+  margin-bottom: 10px;
+  background-color: antiquewhite;
+  border: none;
+  padding: 10px;
+  margin: 2px;
+  margin-bottom: 10px;
+}

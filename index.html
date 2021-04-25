@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALBUM SHOPPING</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2 id="site-name">ALBUM SHOPPING SITE </h2>
+  <h3 id="small-talk"><q><i>You can find all albums here...</i></q></h3>
+  <div class="cart button" > <button id="cartButton" onclick="HideNewAlbums(); return show('cartPage','mainPage');"> YOUR CART <span>0</span></button> </div>  
+</header>
+
+<div class="newItem">
+  <h3 style="color: #66400fd7;" id="newItemHeader">ADD A NEW ALBUM!! </h3>
+  <form id="myForm">
+    <input class="input" type="file" name="myfile" id="image">
+    <br>
+    Album Name: <input class="input" type="text" placeholder="Type Album Name" >
+    <br>
+    Album Price: <input class="input" type="text" placeholder="Type Album Price">
+    <br>
+    Album Review: <input class="input" type="text" placeholder="Type Album Review">
+    <br>
+    <button class="input" id= "addbtn" type="button" >ADD Album</button>
+  </form>
+</div>
+
+<div class="product-container" id="cartPage" style="display:none">
+  <div class="product-header">
+    <h5 class="product-title cartTitle"> PRODUCT </h5>   
+    <h5 class="price cartTitle">PRICE</h5>
+    <h5 class="quantity cartTitle">QUANTITY</h5>
+    <h5 class="total cartTitle">TOTAL</h5>
+  </div>
+     
+  <div class="products">
+  </div>
+
+
+  <div class="basketTotalContainer">
+    <h4 class="basketTotalTitle">
+      BASKET TOTAL
+    </h4>
+    <h4 id="total" class="basketTotal">
+        total
+    </h4>
+  </div>
+
+
+  <div class="buyinButtonsDiv">
+    <button class="buyinButtons" onclick="return showHome('mainPage','cartPage');">GO TO HOME</button>
+    <button class="buyinButtons" onclick="displayBuyingPage();">BUY NOW!</button>                  
+  </div>
+  
+
+  <div class="buyingInfo" id="buyingPage">
+      <div class="addressInfo">
+        ADDRESS INFO: <input class="info" type="text" placeholder="Type address..." required>
+      </div>
+      <br>
+      <div class="paymentOptions">
+        WIRE TRANSFER <input type="radio" name="payment" required>
+        CREDIT CARD  <input type="radio" name="payment" required>
+        <br>
+        <div class="paymentButton">
+          <p id="message" style="display: none;">YOU BOUGHT THE ALBUMS .</p>
+          <br>
+          <button class="buyinButtons" onclick="message();" id="TransactionButton">COMPLETE</button>
+        </div>
+      </div>
+
+  </div>
+
+</div>        
+
+<div id="mainPage" class="container">
+
+  <div class="albumProduct">
+    <img class="image" src="images/evermore.jpg" alt="evermore">
+    <h3>EVERMORE</h3>
+    <h3>20$</h3>
+    <p><q><i>Here we are again…again </i></q><br> -Rolling Stones</p>
+    <a class="add-cart cart1" href="#" onclick="onLoadCartNumbers()">Add Cart</a>
+  </div>
+
+  <div class="albumProduct">
+    <img class="image" src="images/folklore.jpg" alt="folklore">
+    <h3>FOLKLORE</h3>
+    <h3>10$</h3>
+    <p><q><i>Taylor Swift, a Pop Star Done With Pop</i></q><br> -NY Times</p>
+    <a class="add-cart cart2" href="#" onclick="onLoadCartNumbers()">Add Cart</a>
+  </div>
+
+  <div class="albumProduct">
+    <img class="image" src="images/lover.jpg" alt="lover">
+    <h3>LOVER</h3>
+    <h3>10$</h3>
+    <p><q><i>Spelling is fun!</i></q><br> -LA Times</p>
+    <a class="add-cart cart3" href="#" onclick="onLoadCartNumbers()">Add Cart</a>
+  </div>
+
+  <div class="albumProduct">
+    <img class="image" src="images/reputation.jpg" alt="reputation">
+    <h3>REPUTATION</h3>
+    <h3>10$</h3>
+    <p><q><i>There will be no further explanation.</i>
+    <br>
+    <i>There will be just reputation.</i></q> <br>-Taylor Swift</p>
+    <a class="add-cart cart4" href="#" onclick="onLoadCartNumbers()">Add Cart</a>
+  </div>
+
+  <div class="albumProduct">
+    <img class="image" src="images/nineteen.jpg" alt="1989">
+    <h3>1989</h3>
+    <h3>30$</h3>
+    <p><q><i>Taylor Swift is the music industry</i></q><br>-Barbara Walters</p>
+    <a class="add-cart cart5" href="#" onclick="onLoadCartNumbers()">Add Cart</a>
+  </div>
+
+  <div class="albumProduct">
+    <img class="image" src="images/red.jpg" alt="red">
+    <h3>RED</h3>
+    <h3>10$</h3>
+    <p><q><i>She makes me feel things.</i></q><br> -Jake Peralta</p>
+    <a class="add-cart cart6" href="#" onclick="onLoadCartNumbers()">Add Cart</a>
+  </div>
+
+  </div>
+
+  <div class="newAlbums"  id="newAlbums">
+    <p id="addedmessage" style="display: none;">ALBUMS ADDED AT THE BOTTOM.</p>
+  </div>
+
+</div>
+  <script src="main.js" ></script>
+  
+</body>
+</html>
+
+
+
